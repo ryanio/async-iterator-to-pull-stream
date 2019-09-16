@@ -2,9 +2,10 @@
   "name": "async-iterator-to-pull-stream",
   "version": "1.3.0",
   "description": "Convert a (async) iterator to a pull stream",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "nyc --reporter=lcov --reporter=text ava --verbose"
+    "test": "nyc --reporter=lcov --reporter=text ava --verbose",
+    "transpile": "babel index.js --out-dir dist"
   },
   "keywords": [
     "pull",
@@ -25,6 +26,11 @@
     "compileEnhancements": false
   },
   "dependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "get-iterator": "^1.0.2",
     "pull-stream-to-async-iterator": "^1.0.1"
   },
