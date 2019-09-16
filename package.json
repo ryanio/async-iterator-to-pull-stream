@@ -29,8 +29,6 @@
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "get-iterator": "^1.0.2",
     "pull-stream-to-async-iterator": "^1.0.1"
   },
